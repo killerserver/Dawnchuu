@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Roblox Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Pretendard:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Pretendard;
+background:#050816;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.profile-card{
+width:420px;
+background:rgba(10,15,35,0.8);
+backdrop-filter:blur(10px);
+border:1px solid rgba(0,255,255,0.2);
+border-radius:20px;
+padding:30px;
+text-align:center;
+box-shadow:0 0 30px rgba(0,255,255,0.2);
+transition:0.4s;
+}
+
+.profile-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 60px rgba(0,255,255,0.5);
+}
+
+.avatar{
+width:120px;
+height:120px;
+border-radius:50%;
+border:3px solid cyan;
+margin-bottom:15px;
+}
+
+.username{
+font-family:Orbitron;
+font-size:28px;
+color:#00ffff;
+}
+
+.tag{
+color:#9aa4ff;
+margin-bottom:15px;
+}
+
+.bio{
+font-size:14px;
+opacity:0.8;
+margin-bottom:25px;
+}
+
+.stats{
+display:flex;
+justify-content:space-between;
+margin-bottom:25px;
+}
+
+.stat{
+background:#0b1026;
+padding:12px;
+border-radius:10px;
+width:30%;
+}
+
+.stat h3{
+color:#00ffff;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+}
+
+button{
+flex:1;
+padding:10px;
+border:none;
+border-radius:8px;
+font-weight:600;
+cursor:pointer;
+transition:0.2s;
+}
+
+.follow{
+background:#00ffff;
+color:black;
+}
+
+.message{
+background:#111633;
+color:white;
+border:1px solid #00ffff;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="profile-card">
+
+<img class="avatar" src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-420-420/1.png">
+
+<div class="username">Killer</div>
+<div class="tag">@roblox_player</div>
+
+<div class="bio">
+🎮 Roblox Developer  
+⚡ Making cool games  
+🔥 Future Game Creator
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h3>124</h3>
+<p>Friends</p>
+</div>
+
+<div class="stat">
+<h3>8</h3>
+<p>Games</p>
+</div>
+
+<div class="stat">
+<h3>3.2K</h3>
+<p>Followers</p>
+</div>
+
+</div>
+
+<div class="buttons">
+<button class="follow">Follow</button>
+<button class="message">Message</button>
+</div>
+
+</div>
+
+</body>
+</html>
