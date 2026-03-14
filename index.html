@@ -88,6 +88,7 @@ color:#00ffff;
 .buttons{
 display:flex;
 gap:10px;
+flex-wrap:wrap;
 }
 
 button{
@@ -107,6 +108,12 @@ color:black;
 
 .message{
 background:#111633;
+color:white;
+border:1px solid #00ffff;
+}
+
+.points{
+background:#0b1026;
 color:white;
 border:1px solid #00ffff;
 }
@@ -153,6 +160,7 @@ transform:scale(1.05);
 </div>
 
 <div class="buttons">
+
 <button class="follow"
 onclick="window.open('https://www.roblox.com/ko/users/10470535669/profile?friendshipSourceType=PlayerSearch#!#about','_blank')">
 인맥추가
@@ -161,14 +169,27 @@ onclick="window.open('https://www.roblox.com/ko/users/10470535669/profile?friend
 <button class="message" onclick="copyDiscord()">
 Discord ID Copy
 </button>
+
+<button class="points" onclick="goPoints()">
+포인트 계산기
+</button>
+
+</div>
+
 </div>
 
 <script>
+
 function copyDiscord() {
 const discordId = "saebyeog__.";
 navigator.clipboard.writeText(discordId);
 alert("디스코드 아이디가 복사되었습니다!");
 }
+
+function goPoints(){
+window.location.href = "points.html";
+}
+
 </script>
 
 </body>
